@@ -1,4 +1,5 @@
 import React from "react";
+import chef from "../assets/chef.webp";
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
       <div className="flex w-full md:w-1/2 items-center justify-center mt-6 md:mt-0">
         <img 
           className="rounded-lg shadow-lg w-3/4 max-w-[400px] md:max-w-[500px] object-cover"
-          src="src\assets\chef.webp"
+          src={chef}
           alt="Chef"
         />
       </div>

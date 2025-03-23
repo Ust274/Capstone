@@ -1,7 +1,11 @@
 import React from "react";
 import Card from "./Card";
+import pizza from "../assets/pizza.jpeg";
+import chicken from "../assets/chicken.jpg";
+import pasta from "../assets/pasta.jpeg";
 import { useNavigate } from "react-router-dom";
 import CustomerReview from "./CustomerReview";
+import maindish from '../assets/image.png';
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -30,7 +34,7 @@ const Hero = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
           <img
-            src="src/assets/image.png" 
+            src={maindish} 
             alt="Delicious Mediterranean dish"
             className="w-full max-w-md rounded-lg shadow-lg object-cover"
           />
@@ -51,9 +55,27 @@ const Hero = () => {
         
         {/* Cards Grid - Responsive */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 mx-4 md:mx-14">
-          <Card />
-          <Card />
-          <Card />
+        <Card 
+          dishName="Pepperoni Pizza" 
+          description="Classic pepperoni with mozzarella and tomato sauce on a crispy crust." 
+          price="$14.99" 
+          imageUrl={pizza}
+        />
+
+        <Card 
+          dishName="BBQ Chicken" 
+          description="Grilled chicken, BBQ sauce, red onions" 
+          price="$15.99"
+          imageUrl={chicken}
+        />
+
+        <Card 
+          dishName="Pasta" 
+          description="Rich cremy Pasta." 
+          price="$13.99" 
+          imageUrl={pasta}
+      />
+
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram,Facebook,Twitter,Linkedin } from "lucide-react";
+import footerLogo from "../assets/footerLogo.svg";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="grid grid-cols-3 gap-8 w-full">
         {/* Logo Section */}
         <div>
-          <img src="src\assets\footerLogo.svg" alt="Footer Logo" className="h-40 w-40 object-contain" />
+          <img src={footerLogo} alt="Footer Logo" className="h-40 w-40 object-contain" />
         </div>
 
         {/* Contact Section */}

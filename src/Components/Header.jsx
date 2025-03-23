@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';4
+import logo from '../assets/little-lemon.svg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Header = () => {
       <nav className="flex justify-between items-center w-full h-18 rounded px-10 relative">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="src/assets/little-lemon.svg" alt="logo.png" className="h-10" />
+          <img src={logo} alt="logo.png" className="h-10" />
         </div>
 
         {/* Burger Menu Icon (Visible on Mobile) */}
