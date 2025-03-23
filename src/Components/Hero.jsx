@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import pizza from "../assets/pizza.jpeg";
 import chicken from "../assets/chicken.jpg";
-import pasta from "../assets/pasta.jpeg";
+import pasta from "../assets/Pasta.jpeg";
 import { useNavigate } from "react-router-dom";
 import CustomerReview from "./CustomerReview";
 import maindish from '../assets/image.png';
